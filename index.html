@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gil_mecânica — Mecânica e Novidades Automóveis</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f4f7;
+      color: #1e242b;
+      line-height: 1.6;
+    }
+    header {
+      background: #14181f;
+      color: #fff;
+      padding: 16px 20px;
+      border-bottom: 4px solid #e65100;
+    }
+    header .wrap {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .marca { font-size: 20px; font-weight: bold; }
+    .marca span { color: #e65100; }
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 14px;
+    }
+    .banner {
+      background: #1f2530;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .banner h1 { font-size: 28px; margin-bottom: 10px; }
+    .banner p { max-width: 600px; margin: 0 auto 20px; color: #cfd6df; }
+    .btn {
+      display: inline-block;
+      background: #e65100;
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .btn-sec {
+      background: #2c3545;
+      color: #fff;
+    }
+    .container { max-width: 960px; margin: 30px auto; padding: 0 20px; }
+    h2 {
+      font-size: 20px;
+      margin-bottom: 16px;
+      border-left: 4px solid #e65100;
+      padding-left: 10px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #dce1e7;
+      border-radius: 6px;
+      padding: 18px;
+    }
+    .card h3 { font-size: 17px; margin-bottom: 8px; }
+    .meta {
+      font-size: 12px;
+      color: #e65100;
+      font-weight: bold;
+      margin-bottom: 6px;
+      display: block;
+    }
+    .editor-box {
+      background: #fff;
+      border: 1px solid #dce1e7;
+      border-radius: 6px;
+      padding: 18px;
+      margin-bottom: 32px;
+    }
+    .campo { margin-bottom: 12px; }
+    .campo label { display: block; font-weight: bold; margin-bottom: 4px; font-size: 14px; }
+    .campo input, .campo select, .campo textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #c5cdd6;
+      border-radius: 4px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+    .acoes { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+    .aviso { margin-top: 10px; font-size: 13px; color: #1b5e20; font-weight: bold; }
+    footer {
+      background: #14181f;
+      color: #aab2bd;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap">
+      <div class="marca">Gil_<span>mecânica</span></div>
+      <nav>
+        <a href="#servicos">Serviços</a>
+        <a href="#artigos">Artigos</a>
+        <a href="#publicar">Publicar</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h1>Gil_mecânica</h1>
+    <p>Reparação de viaturas, diagnóstico mecânico, dicas de manutenção e novidades do mundo automóvel.</p>
+    <a href="#contacto" class="btn">Falar Comigo</a>
+  </section>
+
+  <main class="container">
+    <h2 id="servicos">Serviços de Mecânica</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Manutenção e Revisão</h3>
+        <p>Troca de óleo, filtros, velas, correias e revisão geral para manter o carro fiável no dia a dia.</p>
+      </div>
+      <div class="card">
+        <h3>Motor e Arrefecimento</h3>
+        <p>Diagnóstico de falhas, aquecimento do motor, fugas, bomba de água, radiador e afinação.</p>
+      </div>
+      <div class="card">
+        <h3>Travões e Suspensão</h3>
+        <p>Pastilhas, discos, amortecedores, terminais, barulhos na suspensão e estabilidade.</p>
+      </div>
+    </div>
+
+    <h2 id="artigos">Dicas e Novidades Automóveis</h2>
+    <div class="grid" id="lista-artigos">
+      <div class="card">
+        <span class="meta">Dica</span>
+        <h3>Quando trocar o óleo do motor?</h3>
+        <p>Fica atento ao prazo, à viscosidade certa e a ruídos ou luzes no painel. Trocar no tempo evita avarias caras.</p>
+      </div>
+      <div class="card">
+        <span class="meta">Manutenção</span>
+        <h3>Cuidados antes de viajar</h3>
+        <p>Verifica travões, pneus, água do radiador, nível do óleo e bateria antes de pegar estrada.</p>
+      </div>
+      <div class="card">
+        <span class="meta">Novidade</span>
+        <h3>Novidades e tecnologia automóvel</h3>
+        <p>Acompanha tendências de motores, eficiência de combustível e novos modelos que chegam ao mercado.</p>
+      </div>
+    </div>
+
+    <h2 id="publicar">Nova Publicação do Dia a Dia</h2>
+    <div class="editor-box" id="painel-publicacao">
+      <div class="campo">
+        <label for="pub-titulo">Título da publicação</label>
+        <input type="text" id="pub-titulo" placeholder="Ex.: Como identificar barulho nas pastilhas de travão">
+      </div>
+      <div class="campo">
+        <label for="pub-cat">Categoria</label>
+        <select id="pub-cat">
+          <option value="Dica">Dica</option>
+          <option value="Novidade">Novidade</option>
+          <option value="Manutenção">Manutenção</option>
+          <option value="Diagnóstico">Diagnóstico</option>
+        </select>
+      </div>
+      <div class="campo">
+        <label for="pub-texto">Texto do artigo / dica</label>
+        <textarea id="pub-texto" rows="4" placeholder="Escreve aqui os detalhes da publicação de hoje..."></textarea>
+      </div>
+      <div class="acoes">
+        <button type="button" class="btn" onclick="adicionarPublicacao()">Adicionar à Página</button>
+        <button type="button" class="btn btn-sec" onclick="baixarIndexAtualizado()">Baixar index.html Atualizado</button>
+        <button type="button" class="btn btn-sec" onclick="baixarArtigoTxt()">Baixar Artigo (.txt)</button>
+      </div>
+      <p class="aviso" id="msg-status"></p>
+    </div>
+
+    <h2 id="contacto">Contacto</h2>
+    <div class="card">
+      <p><strong>Email:</strong> gilbertomorais081@gmail.com</p>
+      <p>Envia mensagem com a marca, modelo e o problema do carro para orientação ou agendamento.</p>
+    </div>
+  </main>
+
+  <footer>
+    Gil_mecânica — Mecânica Automóvel e Novidades
+  </footer>
+
+  <script id="script-editor">
+    function escaparHTML(texto) {
+      return texto
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function adicionarPublicacao() {
+      const titulo = document.getElementById("pub-titulo").value.trim();
+      const cat = document.getElementById("pub-cat").value;
+      const texto = document.getElementById("pub-texto").value.trim();
+      const msg = document.getElementById("msg-status");
+
+      if (!titulo || !texto) {
+        msg.textContent = "Preenche o título e o texto antes de adicionar.";
+        return;
+      }
+
+      const dataHoje = new Date().toLocaleDateString("pt-PT");
+      const lista = document.getElementById("lista-artigos");
+      const novoCard = document.createElement("div");
+      novoCard.className = "card";
+      novoCard.innerHTML = `
+        <span class="meta">${escaparHTML(cat)} • ${dataHoje}</span>
+        <h3>${escaparHTML(titulo)}</h3>
+        <p>${escaparHTML(texto)}</p>
+      `;
+
+      lista.prepend(novoCard);
+      document.getElementById("pub-titulo").value = "";
+      document.getElementById("pub-texto").value = "";
+      msg.textContent = "Publicação adicionada! Clica em 'Baixar index.html Atualizado' para guardar o ficheiro.";
+    }
+
+    function baixarFicheiro(nomeFicheiro, conteudo, tipoMime) {
+      const blob = new Blob([conteudo], { type: tipoMime });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = nomeFicheiro;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    function baixarArtigoTxt() {
+      const titulo = document.getElementById("pub-titulo").value.trim() || "Publicacao_Gil_Mecanica";
+      const cat = document.getElementById("pub-cat").value;
+      const texto = document.getElementById("pub-texto").value.trim();
+      const msg = document.getElementById("msg-status");
+
+      if (!texto) {
+        msg.textContent = "Escreve algum texto no campo do artigo para baixar em .txt.";
+        return;
+      }
+
+      const conteudoTxt = `Título: ${titulo}\nCategoria: ${cat}\nData: ${new Date().toLocaleDateString("pt-PT")}\n\n${texto}\n`;
+      baixarFicheiro("artigo-gil-mecanica.txt", conteudoTxt, "text/plain;charset=utf-8");
+      msg.textContent = "Ficheiro artigo-gil-mecanica.txt baixado!";
+    }
+
+    function baixarIndexAtualizado() {
+      const cloneDoc = document.documentElement.cloneNode(true);
+      const painel = cloneDoc.querySelector("#painel-publicacao");
+      const h2Publicar = cloneDoc.querySelector('h2[id="publicar"]');
+      const linkPublicar = cloneDoc.querySelector('nav a[href="#publicar"]');
+      const scriptEditor = cloneDoc.querySelector("#script-editor");
+
+      if (painel) painel.remove();
+      if (h2Publicar) h2Publicar.remove();
+      if (linkPublicar) linkPublicar.remove();
+      if (scriptEditor) scriptEditor.remove();
+
+      const htmlFinal = "<!DOCTYPE html>\n" + cloneDoc.outerHTML;
+      baixarFicheiro("index.html", htmlFinal, "text/html;charset=utf-8");
+      document.getElementById("msg-status").textContent = "Novo index.html baixado! Move ou envia para o teu projeto/GitHub.";
+    }
+  </script>
+</body>
+</html>
